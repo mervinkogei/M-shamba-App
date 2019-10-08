@@ -9,8 +9,16 @@
 }
 
 h4 {
-    font-size: 40px;
+    font-size: 60px;
     font-style: italic;
-    color: blueviolet
-    
+    color: black;
+    }
+
+.image3 {
+    text-align: center;
+}
+
+.image4 {
+    text-align: center;
+    margin-top: 10px;
 }
