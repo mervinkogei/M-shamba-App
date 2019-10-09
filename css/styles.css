@@ -1,2 +1,44 @@
-id{padding:pixel}
-class {margin:pixel}
+
+.caption {
+    padding-bottom: 2%;
+    color: 5px 5px solid green;
+    text-shadow: 5px 5px  5px black;
+}
+nav{
+    position: sticky;
+}
+.image1 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.image2 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 60px;
+    font-style: italic;
+    color: black;
+    }
+
+.image3 {
+    text-align: center;
+}
+
+.image4 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.image5 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.image6 {
+    margin-top: 10px;
+    text-align: center;
+}
+
