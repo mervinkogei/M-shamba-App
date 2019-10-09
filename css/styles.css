@@ -1,2 +1,24 @@
-id{padding:pixel}
-class {margin:pixel}
+.image1 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.image2 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 60px;
+    font-style: italic;
+    color: black;
+    }
+
+.image3 {
+    text-align: center;
+}
+
+.image4 {
+    text-align: center;
+    margin-top: 10px;
+}
