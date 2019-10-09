@@ -18,9 +18,11 @@ nav{
 }
 
 h4 {
-    font-size: 60px;
+    font-size: 70px;
     font-style: italic;
     color: black;
+    margin-top: 30px;
+    color: maroon;
     }
 
 .image3 {
@@ -41,4 +43,29 @@ h4 {
     margin-top: 10px;
     text-align: center;
 }
+
+.image7 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.image8 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.image9 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.image10 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.market {
+    /* background-color: green; */
+}
+
 
