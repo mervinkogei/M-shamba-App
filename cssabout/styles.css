@@ -1,0 +1,26 @@
+.container-fluid{
+  /* margin-right: 20px; */
+  background-color:transparent;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvLq_YrebV-rjxkFtZhhXTCld5id4tmDPfwn71U_nsX1Go7Kw63w");
+  background-color: white;
+  background-repeat:no-repeat;
+  background-size: cover;
+  
+}
+.about p {
+  font-size:27px;
+  font-style: initial;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+}
+.list{
+  font-size:25px;
+  font-style: initial;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:white;
+}
+.container-fluid h2{
+  font-weight: bolder;
+  font-size:35px;
+
+}

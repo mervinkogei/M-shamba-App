@@ -4,6 +4,9 @@
     color: 5px 5px solid green;
     text-shadow: 5px 5px  5px black;
 }
+*{
+    overflow-x: hidden;
+}
 nav{
     position: sticky;
 }
@@ -31,3 +34,22 @@ h4 {
     text-align: center;
     margin-top: 10px;
 }
+footer{
+    min-height: 50px;
+    width: 100vw;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+    padding: 30px;
+    /* background-color: lightgreen; */
+    
+}
+footer a{
+    margin: 20px;
+    font-size: 20px;
+    padding-top: 10px;
+    color: white;
+}
+.modal-content img{
+    text-align: center;
+    align-content: center;
+  }

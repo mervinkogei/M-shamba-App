@@ -1,393 +1,1644 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>M-Shamba | Welcome </title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./css/styles.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
-    
-    </head>
-    
-    <body>
-        <div class="container">
-            <!-- Trigger the modal with a button -->
-            <!--Modal: Login / Register Form-->
-            <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog cascading-modal" role="document">
-                    <!--Content-->
-                    <div class="modal-content">
-    
-                        <!--Modal cascading tabs-->
-                        <div class="modal-c-tabs">
-    
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i
-                                            class="fas fa-user"></i>Login</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i
-                                            class="fas fa-user-plus"></i>Register</a>
-                                </li>
-                            </ul>
-    
-                            <!-- Tab panels -->
-                            <div class="tab-content">
-                                <!--Panel 7-->
-                                <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
-    
-                                    <!--Body-->
-                                    <div class="modal-body mb-1">
-                                        <div class="md-form form-sm mb-5">
-                                            <i class="fas fa-envelope prefix"></i>
-                                            <input type="email" id="modalLRInput10"
-                                                class="form-control form-control-sm validate">
-                                            <label data-error="wrong" data-success="right" for="modalLRInput10">Your
-                                                email</label>
-                                        </div>
-    
-                                        <div class="md-form form-sm mb-4">
-                                            <i class="fas fa-lock prefix"></i>
-                                            <input type="password" id="modalLRInput11"
-                                                class="form-control form-control-sm validate">
-                                            <label data-error="wrong" data-success="right" for="modalLRInput11">Your
-                                                password</label>
-                                        </div>
-                                        <div class="text-center mt-2">
-                                            <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
-                                        </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>M-Shamba | Welcome </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/market.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="./css/myStyles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+           integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+       </script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+           integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+       </script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+           integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Trigger the modal with a button -->
+        <!--Modal: Login / Register Form-->
+        <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog cascading-modal" role="document">
+                <!--Content-->
+                <div class="modal-content">
+
+                    <!--Modal cascading tabs-->
+                    <div class="modal-c-tabs">
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i
+                                        class="fa fa-user"></i>Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i
+                                        class="fa fa-user-plus"></i>Register</a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab panels -->
+                        <div class="tab-content">
+                            <!--Panel 7-->
+                            <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+                                <!--Body-->
+                                <div class="modal-body mb-1">
+                                    <div class="md-form form-sm mb-5">
+                                        <i class="fa fa-envelope prefix"></i>
+                                        <input type="email" id="modalLRInput10"
+                                            class="form-control form-control-sm validate">
+                                        <label data-error="wrong" data-success="right" for="modalLRInput10">Your
+                                            email</label>
                                     </div>
-                                    <!--Footer-->
-                                    <div class="modal-footer">
-                                        <div class="options text-center text-md-right mt-1">
-                                            <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
-                                            <p>Forgot <a href="#" class="blue-text">Password?</a></p>
-                                        </div>
-                                        <button type="button" class="btn btn-outline-info waves-effect ml-auto"
-                                            data-dismiss="modal">Close</button>
+
+                                    <div class="md-form form-sm mb-4">
+                                        <i class="fa fa-lock prefix"></i>
+                                        <input type="password" id="modalLRInput11"
+                                            class="form-control form-control-sm validate">
+                                        <label data-error="wrong" data-success="right" for="modalLRInput11">Your
+                                            password</label>
                                     </div>
-    
+                                    <div class="text-center mt-2">
+                                      <script>
+                                        function greeting(){
+                                          // test code                                       
+                                    
+                                        
+                                        var email=document.getElementById('modalLRInput10').value;
+                                        var password=document.getElementById('modalLRInput11').value;
+                                        
+
+                                        if(email==""){
+                                            alert('Email is required, Kindly provide your email to log in');
+                                            return
+                                        }else if(password==""){
+                                            alert('Password cannot be empty, Provide your password and try again');
+                                        } else{
+                                          alert('Thank you for your purchase your goods will be delivered to you')
+                                        }
+
+                                    }
+                                  
+                                  
+                                    
+                                    
+
+                                    
+
+
+                                         // end of test code
+
+                                          
+                                        
+                                        </script>
+                                      
+                                        <button class="btn btn-info" onclick="greeting()">Log in  <i class="fa fa-sign-in ml-1"></i></button>
+                                    </div>
+                                    
                                 </div>
-                                <!--/.Panel 7-->
-    
-                                <!--Panel 8-->
-                                <div class="tab-pane fade" id="panel8" role="tabpanel">
-    
-                                    <!--Body-->
-                                    <div class="modal-body">
-                                        <div class="md-form form-sm mb-5">
-                                            <i class="fas fa-envelope prefix"></i>
-                                            <input type="email" id="modalLRInput12"
-                                                class="form-control form-control-sm validate">
-                                            <label data-error="wrong" data-success="right" for="modalLRInput12">Your
-                                                email</label>
-                                        </div>
-    
-                                        <div class="md-form form-sm mb-5">
-                                            <i class="fas fa-lock prefix"></i>
-                                            <input type="password" id="modalLRInput13"
-                                                class="form-control form-control-sm validate">
-                                            <label data-error="wrong" data-success="right" for="modalLRInput13">Your
-                                                password</label>
-                                        </div>
-    
-                                        <div class="md-form form-sm mb-4">
-                                            <i class="fas fa-lock prefix"></i>
-                                            <input type="password" id="modalLRInput14"
-                                                class="form-control form-control-sm validate">
-                                            <label data-error="wrong" data-success="right" for="modalLRInput14">Confirm Password</label>
-                                        </div>
-    
-                                        <div class="text-center form-sm mt-2">
-                                            <button class="btn btn-info">Sign up <i
-                                                    class="fas fa-sign-in ml-1"></i></button>
-                                        </div>
-    
-                                    </div>
-                                    <!--Footer-->
-                                    <div class="modal-footer">
-                                        <div class="options text-right">
-                                            <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
-                                        </div>
-                                        <button type="button" class="btn btn-outline-info waves-effect ml-auto"
-                                            data-dismiss="modal">Close</button>
-                                    </div>
+                                <!--Footer-->
+                                <div class="modal-footer">
+                                    <!-- <div class="options text-center text-md-right mt-1">
+                                        <p>Not a member? <a href="#panel8" class="blue-text">Sign Up</a></p>
+                                        <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                                    </div> -->
+                                    <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                                        data-dismiss="modal">Close</button>
                                 </div>
-                                <!--/.Panel 8-->
+
                             </div>
+                            <!--/.Panel 7-->
+
+                            <!--Panel 8-->
+                            <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+                                <!--Body-->
+                                <div class="modal-body" >
+                                    <div class="md-form form-sm mb-5">
+                                        <i class="fa fa-envelope prefix"></i>
+                                        <input type="email" id="modalLRInput12"
+                                            class="form-control form-control-sm validate">
+                                        <label data-error="wrong" data-success="right" for="modalLRInput12">Your
+                                            email</label>
+                                    </div>
+
+                                    <div class="md-form form-sm mb-5">
+                                        <i class="fa fa-lock prefix"></i>
+                                        <input type="password" id="modalLRInput13"
+                                            class="form-control form-control-sm validate">
+                                        <label data-error="wrong" data-success="right" for="modalLRInput13">Your
+                                            password</label>
+                                    </div>
+
+                                    <div class="md-form form-sm mb-4">
+                                        <i class="fa fa-lock prefix"></i>
+                                        <input type="password" id="modalLRInput14"
+                                            class="form-control form-control-sm validate">
+                                        <label data-error="wrong" data-success="right" for="modalLRInput14">Confirm
+                                            Password</label>
+                                    </div>
+
+                                    <div class="text-center form-sm mt-2">
+                                        <button class="btn btn-info">Sign up  <i
+                                                class="fa fa-sign-in ml-1"></i></button>
+                                    </div>
+                                    <!-- start of script -->
+
+                                    <!-- end  of script -->
+
+                                </div>
+                                <!--Footer-->
+                                <div class="modal-footer">
+                                    <!-- <div class="options text-right">
+                                        <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log
+                                                In</a></p>
+                                    </div> -->
+                                    <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                                        data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            <!--/.Panel 8-->
+                        </div>
+
+                    </div>
+                </div>
+                <!--/.Content-->
+            </div>
+        </div>
+        <!--Modal: Login / Register Form-->
+
+        <div class="text-right">
+
+        </div>
+
+    </div>
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <a class="navbar-brand" href="#">M-Shamba</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="about.html">About Us <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="market.html">Market <span class="sr-only">(current)</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="contact.html">Contact us <span class="sr-only">(current)</a>
+                </li>
+            </ul>
+        </div>
+
+        <a href="" > 
+            </a>
+        
+        </div>
+    </nav>
+
+    <!-- End of navbar -->
     
+    <!-- Start of Market -->
+    <div class="market">  
+
+    <div class="image1">
+        <h4>VEGETABLES</h4>
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-3">                                                                                                                                                                         
+                    <!-- test -->
+                    <div class="shop-item ">
+                        <span class="shop-item-title">MAIZE</span>
+                        <img class="shop-item-image" src="./images/maize-product.jpeg" width="310px" height="280px">
+                        <div class="shop-item-details">
+                            
+                            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#maize">
+                                View product</button> <br>
+                                <span class="shop-item-price">Kshs. 1200.00</span>
+                            
                         </div>
                     </div>
-                    <!--/.Content-->
-                </div>
-            </div>
-            <!--Modal: Login / Register Form-->
-    
-            <div class="text-right">
-                
-            </div>
-    
-        </div>
-        <!-- Start of navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-            <a class="navbar-brand" href="#">M-Shamba</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-    
-    
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="about.html">About Us <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="market.html">Market <span class="sr-only">(current)</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</a>
-                    </li>
-                     </ul>
-            </div>
-    
-            <a href="" class="btn btn-default btn-rounded my-3" data-toggle="modal" data-target="#modalLRForm">LogIn | Register</a>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-                
-            </form>
-            </div>
-        </nav>
-    
-        <!-- End of navbar -->
-       
-    <!-- Start of Market -->
+                    <!-- end of test -->
 
-<div class="image1">
-    <h4>VEGETABLES</h4>
-    <div class="container-fluid">
-        <div class="row">
+                </div>
 
                 <div class="col-md-3">
-                      <img src="./images/maize-product.jpeg" width="310px" height="280px">
-                        <h5>MAIZE</h5>
-                        <h6>ksh1200</h6>
-                        <button class="btn btn-primary">Add to cart</button>
+                   
+
+                    <!-- item -->
+                    <div class="shop-item ">
+                        <span class="shop-item-title">CABBAGES</span>
+                        <img class="shop-item-image" src="./images/cabbage.jpeg" width="310px" height="280px">
+                        <div class="shop-item-details">
+                            
+                            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cabbage">
+                                View product</button> <br>
+                                <span class="shop-item-price">Kshs. 100 </span>
+                            
+                        </div>
+                    </div>
+                    <!-- end of item -->
+
                 </div>
 
-                 <div class="col-md-3">
-                    <img src="./images/cabbage.jpeg" width="310px" height="280px">
-                      <h5>CABBAGES</h5>
-                      <h6>ksh1000</h6>
-                      <button class="btn btn-primary">Add to cart</button>
-                 </div>
-
-                 <div class="col-md-3">
-                   <img src="./images/veeggy1.jpeg" width="310px" height="280px">
-                     <h5>CARROTS</h5>
-                    <h6>ksh1500</h6>
-                    <button class="btn btn-primary">Add to cart</button>
-                   </div>
-
-                  <div class="col-md-3">
-                    <img src="./images/veeggy2.jpeg" width="300px" height="280px">
-                     <h5>BROCOLI</h5>
-                      <h6>ksh2800</h6>
-                      <button class="btn btn-primary">Add to cart</button>
+                <div class="col-md-3">
+                    <!-- item -->
+                    <div class="shop-item ">
+                        <span class="shop-item-title">CARROTS</span>
+                        <img class="shop-item-image" src="./images/veeggy1.jpeg" width="310px" height="280px">
+                        <div class="shop-item-details">
+                            
+                            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#carrots">
+                                View product</button> <br>
+                                <!-- <span class="shop-item-price">Kshs. 50.00</span> -->
+                            
+                        </div>
                     </div>
+                    <!-- end of item -->
+                </div>
+
+                <div class="col-md-3">
+                   <!-- item -->
+                   <div class="shop-item ">
+                      <span class="shop-item-title">BROCCOLI</span>
+                      <img class="shop-item-image" src="./images/veeggy2.jpeg" width="310px" height="280px">
+                      <div class="shop-item-details">
+                          
+                          <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#brocoli">
+                              View product</button> <br>
+                              <span class="shop-item-price">Kshs. 50.00</span>
+                          
+                      </div>
+                  </div>
+                  <!-- end of item -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="image2">
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- item -->
+                    <div class="shop-item ">
+                        <span class="shop-item-title">GINGER</span>
+                        <img class="shop-item-image" src="./images/veggy5.jpeg.jpeg" width="310px" height="280px">
+                        <div class="shop-item-details">
+                            
+                            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ginger">
+                                View product</button> <br>
+                                <span class="shop-item-price">Kshs. 80.00</span>
+                            
+                        </div>
+                    </div>
+                    <!-- end of item -->
+
+                </div>
+
+                <div class="col-md-3">
+                    <!-- item -->
+                    <div class="shop-item ">
+                        <span class="shop-item-title">PEAS</span>
+                        <img class="shop-item-image" src="./images/veggy7.jpeg" width="310px" height="280px">
+                        <div class="shop-item-details">
+                            
+                            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#peas">
+                                View product</button> <br>
+                                <span class="shop-item-price">Kshs. 120.00</span>
+                            
+                        </div>
+                    </div>
+                    <!-- end of item -->
+
+                </div>
+
+                <div class="col-md-3">
+                    <!-- item -->
+                    <div class="shop-item ">
+                        <span class="shop-item-title">HOHO</span>
+                        <img class="shop-item-image" src="./images/veggy8.jpeg" width="310px" height="280px">
+                        <div class="shop-item-details">
+                            
+                            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#hoho">
+                                View product</button> <br>
+                                <span class="shop-item-price">Kshs. 60.00</span>
+                            
+                        </div>
+                    </div>
+                    <!-- end of item -->
+
+                </div>
+
+                <div class="col-md-3">
+                   <!-- item -->
+                   <div class="shop-item ">
+                      <span class="shop-item-title">KALES</span>
+                      <img class="shop-item-image" src="./images/veggy9.jpg" width="310px" height="280px">
+                      <div class="shop-item-details">
+                          
+                          <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#kales">
+                              View product</button> <br>
+                              <span class="shop-item-price">Kshs. 35.00</span>
+                          
+                      </div>
+                  </div>
+                  <!-- end of item -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image3">
+        <h4>FRUITS</h4>
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <!-- item -->
+                    <div class="shop-item ">
+                        <span class="shop-item-title">APPLES</span>
+                        <img class="shop-item-image" src="./images/fruit1.jpeg" width="310px" height="280px">
+                        <div class="shop-item-details">
+                            
+                            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#apples">
+                                View product</button> <br>
+                                <span class="shop-item-price">Kshs. 99.00</span>
+                            
+                        </div>
+                    </div>
+                    <!-- end of item -->
+
+                </div>
+
+                <div class="col-md-3">
+                   <!-- item -->
+                   <div class="shop-item ">
+                      <span class="shop-item-title">ORANGES</span>
+                      <img class="shop-item-image" src="./images/fruit3.jpeg" width="310px" height="280px">
+                      <div class="shop-item-details">
+                          
+                          <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#oranges">
+                              View product</button> <br>
+                              <span class="shop-item-price">Kshs. 69.00</span>
+                          
+                      </div>
+                  </div>
+                  <!-- end of item -->
+
+                </div>
+
+                <div class="col-md-3">
+                    <!-- item -->
+                    <div class="shop-item ">
+                        <span class="shop-item-title">AVOCADO</span>
+                        <img class="shop-item-image" src="./images/fruit2.jpeg" width="310px" height="280px">
+                        <div class="shop-item-details">
+                            
+                            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mango">
+                                View product</button> <br>
+                                <span class="shop-item-price">Kshs. 55.00</span>
+                            
+                        </div>
+                    </div>
+                    <!-- end of item -->
+
+                </div>
+
+                <div class="col-md-3">
+                    <!-- item -->
+                    <div class="shop-item ">
+                        <span class="shop-item-title">STRAWBERRIES</span>
+                        <img class="shop-item-image" src="./images/fruit4.jpeg" width="310px" height="280px">
+                        <div class="shop-item-details">
+                            
+                            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#strawberries">
+                                View product</button> <br>
+                                <span class="shop-item-price">Kshs. 102.00</span>
+                            
+                        </div>
+                    </div>
+                    <!-- end of item -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image4">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <!-- item -->
+                    <div class="shop-item ">
+                        <span class="shop-item-title">PINEAPPLES</span>
+                        <img class="shop-item-image" src="./images/fruit5.jpg" width="310px" height="280px">
+                        <div class="shop-item-details">
+                            
+                            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pineapple">
+                                View product</button> <br>
+                                <span class="shop-item-price">Kshs. 89.00</span>
+                            
+                        </div>
+                    </div>
+                    <!-- end of item -->
+
+                </div>
+
+                <div class="col-md-3">
+                    <!-- item -->
+                    <div class="shop-item ">
+                        <span class="shop-item-title">BANANAS</span>
+                        <img class="shop-item-image" src="./images/fruit6.jpeg" width="310px" height="280px">
+                        <div class="shop-item-details">
+                            
+                            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bananas">
+                                View product</button> <br>
+                                <span class="shop-item-price">Kshs. 89.00</span>
+                            
+                        </div>
+                    </div>
+                    <!-- end of item -->
+                </div>
+
+                <div class="col-md-3">
+                   <!-- item -->
+                   <div class="shop-item ">
+                      <span class="shop-item-title">WATERMELON</span>
+                      <img class="shop-item-image" src="./images/fruit7.jpeg" width="310px" height="280px">
+                      <div class="shop-item-details">
+                          
+                          <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#melon">
+                              View product</button> <br>
+                              <span class="shop-item-price">Kshs. 224.00</span>
+                          
+                      </div>
+                  </div>
+                  <!-- end of item -->
+
+                </div>
+
+                <div class="col-md-3">
+                   <!-- item -->
+                   <div class="shop-item ">
+                      <span class="shop-item-title">PAPAYA</span>
+                      <img class="shop-item-image" src="./images/fruit8.jpeg" width="310px" height="280px">
+                      <div class="shop-item-details">
+                          
+                          <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#papaya">
+                              View product</button> <br>
+                              <span class="shop-item-price">Kshs. 58.00</span>
+                          
+                      </div>
+                  </div>
+                  <!-- end of item -->
+                          </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image5">
+        <h4>LIVESTOCK</h4>
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-3">
+                   <!-- item -->
+                   <div class="shop-item ">
+                      <span class="shop-item-title">BULL</span>
+                      <img class="shop-item-image" src="./images/liv1.jpg" width="310px" height="280px">
+                      <div class="shop-item-details">
+                          
+                          <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bull">
+                              View product</button> <br>
+                              <span class="shop-item-price">Kshs. 45000.00</span>
+                          
+                      </div>
+                  </div>
+                  <!-- end of item -->
+
+                </div>
+
+                <div class="col-md-3">
+                   <!-- item -->
+                   <div class="shop-item ">
+                      <span class="shop-item-title">CHICKEN</span>
+                      <img class="shop-item-image" src="./images/liv2.jpeg" width="310px" height="280px">
+                      <div class="shop-item-details">
+                          
+                          <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#chicken">
+                              View product</button> <br>
+                              <span class="shop-item-price">Kshs. 900.00</span>
+                          
+                      </div>
+                  </div>
+                  <!-- end of item -->
+
+                </div>
+
+                <div class="col-md-3">
+                    <!-- item -->
+                    <div class="shop-item ">
+                        <span class="shop-item-title">COWS</span>
+                        <img class="shop-item-image" src="../images/liv7.jpeg" width="310px" height="280px">
+                        <div class="shop-item-details">
+                            
+                            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cows">
+                                View product</button> <br>
+                                <span class="shop-item-price">Kshs. 55000.00</span>
+                            
+                        </div>
+                    </div>
+                    <!-- end of item -->
+
+                </div>
+
+                <div class="col-md-3">
+                    <!-- item -->
+                    <div class="shop-item ">
+                        <span class="shop-item-title">SHEEP</span>
+                        <img class="shop-item-image" src="./images/liv4.jpeg" width="310px" height="280px">
+                        <div class="shop-item-details">
+                            
+                            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sheep">
+                                View product</button> <br>
+                                <span class="shop-item-price">Kshs.5000.00</span>
+                            
+                        </div>
+                    </div>
+                    <!-- end of item -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image6">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-3">
+                   <!-- item -->
+                   <div class="shop-item ">
+                      <span class="shop-item-title">PIGS</span>
+                      <img class="shop-item-image" src="./images/liv6.jpg" width="310px" height="280px">
+                      <div class="shop-item-details">
+                          
+                          <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pigs">
+                              View product</button> <br>
+                              <span class="shop-item-price">Kshs. 10000.00</span>
+                          
+                      </div>
+                  </div>
+                  <!-- end of item -->
+                </div>
+
+                <div class="col-md-3">
+                    <!-- item -->
+                    <div class="shop-item ">
+                        <span class="shop-item-title">GOAT</span>
+                        <img class="shop-item-image" src="./images/liv8.jpeg" width="310px" height="280px">
+                        <div class="shop-item-details">
+                            
+                            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#goat">
+                                View product</button> <br>
+                                <span class="shop-item-price">Kshs. 5000.00</span>
+                            
+                        </div>
+                    </div>
+                    <!-- end of item -->
+
+                </div>
+
+                <div class="col-md-3">
+                   <!-- item -->
+                   <div class="shop-item ">
+                      <span class="shop-item-title">RABBITS</span>
+                      <img class="shop-item-image" src="./images/liv9.jpeg" width="310px" height="280px">
+                      <div class="shop-item-details">
+                          
+                          <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#rabbit">
+                              View product</button> <br>
+                              <span class="shop-item-price">Kshs. 2500.00</span>
+                          
+                      </div>
+                  </div>
+                  <!-- end of item -->
+
+                </div>
+
+                <div class="col-md-3">
+                    <!-- item -->
+                    <div class="shop-item ">
+                        <span class="shop-item-title">HORSES</span>
+                        <img class="shop-item-image" src="./images/liv6.jpeg" width="310px" height="280px">
+                        <div class="shop-item-details">
+                            
+                            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#horses">
+                                View product</button> <br>
+                                <span class="shop-item-price">Kshs. 65000.00</span>
+                            
+                        </div>
+                    </div>
+                    <!-- end of item -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image7">
+        <h4>FERTILISERS</h4>
+    <div class="image8">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-3">
+                       <!-- item -->
+                    <div class="shop-item ">
+                        <span class="shop-item-title">SULPHATE</span>
+                        <img class="shop-item-image" src="./images/f1.jpeg" width="310px" height="280px">
+                        <div class="shop-item-details">
+                            
+                            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sulphate">
+                                View product</button> <br>
+                                <span class="shop-item-price">Kshs. 3500.00</span>
+                            
+                        </div>
+                    </div>
+                    <!-- end of item -->
+
+                </div>
+
+                <div class="col-md-3">
+                   <!-- item -->
+                   <div class="shop-item ">
+                      <span class="shop-item-title">MANURE</span>
+                      <img class="shop-item-image" src="./images/f8.jpeg" width="310px" height="280px">
+                      <div class="shop-item-details">
+                          
+                          <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#manure">
+                              View product</button> <br>
+                              <span class="shop-item-price">Kshs. 3500.00</span>
+                          
+                      </div>
+                  </div>
+                  <!-- end of item -->
+
+                </div>
+
+                <div class="col-md-3">
+                    <!-- item -->
+                    <div class="shop-item ">
+                        <span class="shop-item-title">BIOAX</span>
+                        <img class="shop-item-image" src="./images/f11.jpeg" width="310px" height="280px">
+                        <div class="shop-item-details">
+                            
+                            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bioax">
+                                View product</button> <br>
+                                <span class="shop-item-price">Kshs. 3500.00</span>
+                            
+                        </div>
+                    </div>
+                    <!-- end of item -->
+
+                </div>
+
+                <div class="col-md-3">
+                    <!-- item -->
+                    <div class="shop-item ">
+                        <span class="shop-item-title">AMMONIUM</span>
+                        <img class="shop-item-image" src="./images/f10.jpeg" width="310px" height="280px">
+                        <div class="shop-item-details">
+                            
+                            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ammonium">
+                                View product</button> <br>
+                                <span class="shop-item-price">Kshs. 4,200.00</span>
+                            
+                        </div>
+                    </div>
+                    <!-- end of item -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image9">
+        <div class="container-fluid">
+            <h4>MACHINERIES</h4>
+            <div class="row">
+
+                <div class="col-md-3">
+                   <!-- item -->
+                   <div class="shop-item ">
+                      <span class="shop-item-title">HARVEST TRACTOR</span>
+                      <img class="shop-item-image" src="./images/t2.jpeg" width="310px" height="280px">
+                      <div class="shop-item-details">
+                          
+                          <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#harvest">
+                              View product</button> <br>
+                              <span class="shop-item-price">Kshs. 420000.00</span>
+                          
+                      </div>
+                  </div>
+                  <!-- end of item -->
+                </div>
+
+                <div class="col-md-3">
+                   <!-- item -->
+                   <div class="shop-item ">
+                      <span class="shop-item-title">TRACTOR</span>
+                      <img class="shop-item-image" src="./images/t4.jpeg" width="310px" height="280px">
+                      <div class="shop-item-details">
+                          
+                          <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tractor">
+                              View product</button> <br>
+                              <span class="shop-item-price">Kshs. 820000.00</span>
+                          
+                      </div>
+                  </div>
+                  <!-- end of item -->
+
+                </div>
+
+                <div class="col-md-3">
+                    <!-- item -->
+                    <div class="shop-item ">
+                        <span class="shop-item-title">SPRINKLER</span>
+                        <img class="shop-item-image" src="./images/t5.jpeg" width="310px" height="280px">
+                        <div class="shop-item-details">
+                            
+                            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sprinkler">
+                                View product</button> <br>
+                                <span class="shop-item-price">Kshs. 150000.00</span>
+                            
+                        </div>
+                    </div>
+
+                    
+                    <!-- end of item -->
+
+                </div>
+
+                <div class="col-md-3">
+                    <!-- item -->
+                    <div class="shop-item ">
+                        <span class="shop-item-title">PLOUGH</span>
+                        <img class="shop-item-image" src="./images/plough.jpeg" width="310px" height="280px">
+                        <div class="shop-item-details">
+                            
+                            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button> 
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#plough">
+                                View product</button> <br>
+                                <span class="shop-item-price">Kshs. 20000.00</span>
+                            
+                        </div>
+                    </div>
+                    <!-- end of item -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- cart placement -->
+    <section class="container content-section">
+        <h2 class="section-header">YOUR MARKET PURCHASE LIST</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">Kshs.0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase  " data-toggle="modal" data-target="#modalLRForm"type="button">PURCHASE</button>
+        
+    </section>
+
+    <!-- end of placement -->
+
+
+
+
+ <!-- Modal descriptions of Market Products -->
+
+ <!-- Button trigger modal -->
+
+       
+       <!-- Modal -->
+       <div class="modal fade" id="maize" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content text-center">
+            <div class="modal-header">
+              <h5 class="modal-title" id="maize">MAIZE</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <img src="./images/maize-product.jpeg" width="310px" height="280px">
+                    <p>Maize as our main cash crop is grown to increase sales and also to promote the economy.
+                        Cost:ksh1200 per sack.
+                    </p>
+                </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+       </div>
+
+       
+       <div class="modal fade" id="cabbage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content text-center">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="cabbage">CABBAGES</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                        <img src="../images/cabbage.jpeg" width="310px" height="280px">
+                        <p>Cabbages are grown in large numbers.<br>
+                            Cost:ksh100 per sack.
+                        </p>
+                    </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  
+                </div>
+              </div>
+            </div>
+           </div>
+
+           <div class="modal fade" id="carrots" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content text-center">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="carrots">CARROTS</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                            <img src="../images/veeggy1.jpeg" width="310px" height="280px">
+                            <p>Carrots are grown in large farm.<br>
+                                Cost:ksh 50 per Kg.
+                            </p>
+                        </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      
+                    </div>
+                  </div>
                 </div>
                </div>
-            </div>
-                           
-<div class="container-fluid">
-              <div class="image2">  
-                 <div class="row">
-                    <div class="col-md-3">
-                      <img src="./images/veggy5.jpeg.jpeg" width="310px" height="280px">
-                         <h5>GINGER</h5>
-                          <h6>ksh1200</h6>
-                          <button class="btn btn-primary">Add to cart</button> 
-                         </div>
 
-                 <div class="col-md-3">
-                    <img src="./images/veggy7.jpeg" width="310px" height="280px">
-                      <h5>PEAS</h5>
-                      <h6>ksh1200</h6>
-                      <button class="btn btn-primary">Add to cart</button> 
-                 </div>
-
-                <div class="col-md-3">
-                    <img src="./images/veggy8.jpeg.jpeg" width="310px" height="280px">
-                    <h5>BEETROOT</h5>
-                    <h6>ksh1200</h6>
-                    <button class="btn btn-primary">Add to cart</button> 
-                </div>
-
-                 <div class="col-md-3">
-                      <img src="./images/veggy9.jpg" width="300px" height="280px">
-                      <h5>KALES</h5>
-                      <h6>ksh1200</h6>
-                      <button class="btn btn-primary">Add to cart</button>
-                     </div>
-                     </div> 
-                 </div>
-             </div>
-
-             <div class="image3">
-                    <h4>FRUITS</h4>
-                    <div class="container-fluid">
-                        <div class="row">
-                
-                         <div class="col-md-3">
-                          <img src="./images/fruit1.jpeg" width="310px" height="280px">
-                            <h5>APPLES</h5>
-                            <h6>ksh1200</h6>
-                              <button class="btn btn-primary">Add to cart</button>
+               <div class="modal fade" id="brocoli" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content text-center">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="brocoli">BROCOLI</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                                <img src="../images/veeggy2.jpeg" width="310px" height="280px">
+                                <p>Brocoli are grown in large farm.<br>
+                                    Cost:ksh 50 per Kg.
+                                </p>
                             </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          
+                        </div>
+                      </div>
+                    </div>
+                   </div>
 
-                         <div class="col-md-3">
-                           <img src="./images/fruit3.jpeg" width="310px" height="280px">
-                             <h5>ORANGES</h5>
-                             <h6>ksh1200</h6>
-                               <button class="btn btn-primary">Add to cart</button>
+                   <div class="modal fade" id="ginger" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content text-center">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="ginger">GINGER</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                    <img src="../images/veggy5.jpeg.jpeg" width="310px" height="280px">
+                                    <p>Ginger are grown in large farm.<br>
+                                        Cost:ksh 80 per Kg.
+                                    </p>
+                                </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              
+                            </div>
+                          </div>
+                        </div>
+                       </div>
+
+                   <div class="modal fade" id="peas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content text-center">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="peas">PEAS</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                    <img src="../images/veggy7.jpeg" width="310px" height="280px">
+                                    <p>Peas are grown in large farm.<br>
+                                        Cost:ksh 120 per Kg.
+                                    </p>
+                                </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              
+                            </div>
+                          </div>
+                        </div>
+                       </div>
+
+                       <div class="modal fade" id="hoho" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content text-center">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="hoho">HOHO</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                        <img src="../images/veggy8.jpeg" width="310px" height="280px">
+                                        <p>hoho are grown in large farm.<br>
+                                            Cost:ksh 60 per Kg.
+                                        </p>
+                                    </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  
+                                </div>
+                              </div>
+                            </div>
                            </div>
 
-                                  <div class="col-md-3">
-                                        <img src="./images/fruit2.jpeg" width="310px" height="280px">
-                                          <h5>AVOCADO</h5>
-                                          <h6>ksh1200</h6>
-                                          <button class="btn btn-primary">Add to cart</button>
-                                  </div>
-
-                                      <div class="col-md-3">
-                                        <img src="./images/fruit4.jpeg" width="300px" height="280px">
-                                          <h5>STRAWBERRIES</h5>
-                                          <h6>ksh1200</h6>
-                                          <button class="btn btn-primary">Add to cart</button>
-                                  </div> 
-                                </div>
-                            </div>
-                        </div>
-
-                         <div class="image4">
-                                <div class="container-fluid">
-                                    <div class="row">
-                            
-                                     <div class="col-md-3">
-                                      <img src="./images/fruit5.jpg" width="310px" height="280px">
-                                        <h5>PINEAPPLE</h5>
-                                        <h6>ksh1200</h6>
-                                          <button class="btn btn-primary">Add to cart</button>
-                                        </div>
-            
-                                     <div class="col-md-3">
-                                       <img src="./images/fruit6.jpeg" width="310px" height="280px">
-                                         <h5>BANANA</h5>
-                                         <h6>ksh1200</h6>
-                                           <button class="btn btn-primary">Add to cart</button>
-                                       </div>
-            
-                                              <div class="col-md-3">
-                                                    <img src="./images/fruit7.jpeg" width="310px" height="280px">
-                                                      <h5>MELON</h5>
-                                                      <h6>ksh1200</h6>
-                                                      <button class="btn btn-primary">Add to cart</button>
-                                              </div>
-        
-                                              <div class="col-md-3">
-                                                    <img src="./images/fruit8.jpeg" width="300px" height="280px">
-                                                      <h5>PAPAYA</h5>
-                                                      <h6>ksh1200</h6>
-                                                      <button class="btn btn-primary">Add to cart</button>
-                                              </div> 
-                                         </div>
-                                        </div>
+                           <div class="modal fade" id="kales" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content text-center">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="kales">KALES</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
                                     </div>
+                                    <div class="modal-body">
+                                            <img src="../images/veggy9.jpg" width="310px" height="280px">
+                                            <p>Kales are grown in large farm.<br>
+                                                Cost:ksh 35 per Kg.
+                                            </p>
+                                        </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                               </div>
 
-                                    <div class="image5">
-                                            <div class="container-fluid">
-                                                <div class="row">
-                                        
-                                                 <div class="col-md-3">
-                                                  <img src="./images/liv1.jpg" width="310px" height="280px">
-                                                    <h5>BULL</h5>
-                                                    <h6>ksh90000</h6>
-                                                      <button class="btn btn-primary">Add to cart</button>
-                                                    </div>
-                        
-                                                 <div class="col-md-3">
-                                                   <img src="./images/liv2.jpeg" width="310px" height="280px">
-                                                     <h5>CHICKEN</h5>
-                                                     <h6>900</h6>
-                                                       <button class="btn btn-primary">Add to cart</button>
-                                                   </div>
-                        
-                                                          <div class="col-md-3">
-                                                                <img src="./images/liv7.jpeg" width="310px" height="280px">
-                                                                  <h5>COWS</h5>
-                                                                  <h6>ksh50,000</h6>
-                                                                  <button class="btn btn-primary">Add to cart</button>
-                                                          </div>
-                    
-                                                          <div class="col-md-3">
-                                                                <img src="./images/liv4.jpeg" width="300px" height="280px">
-                                                                  <h5>SHEEP</h5>
-                                                                  <h6>ksh10,000</h6>
-                                                                  <button class="btn btn-primary">Add to cart</button>
-                                                          </div> 
-                                                     </div>
-                                                    </div>
+                               <div class="modal fade" id="apples" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                      <div class="modal-content text-center">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="apples">APPLES</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="modal-body">
+                                                <img src="../images/fruit1.jpeg" width="310px" height="280px">
+                                                <p>Apples are grown in large farm.<br>
+                                                    Cost:ksh 99 per Kg.
+                                                </p>
+                                            </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                   </div>
+
+                                   <div class="modal fade" id="oranges" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                          <div class="modal-content text-center">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="oranges">ORANGES</h5>
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                    <img src="../images/fruit3.jpeg" width="310px" height="280px">
+                                                    <p>Oranges are grown in large farm.<br>
+                                                        Cost:ksh 69 per Kg.
+                                                    </p>
                                                 </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                       </div>
 
-                                                <div class="image6">
-                                                        <div class="container-fluid">
-                                                            <div class="row">
-                                                    
-                                                             <div class="col-md-3">
-                                                              <img src="./images/liv6.jpeg" width="310px" height="280px">
-                                                                <h5>HORSES</h5>
-                                                                <h6>ksh900,000</h6>
-                                                                  <button class="btn btn-primary">Add to cart</button>
-                                                                </div>
-                                    
-                                                             <div class="col-md-3">
-                                                               <img src="./images/liv8.jpeg" width="310px" height="280px">
-                                                                 <h5>GOAT</h5>
-                                                                 <h6>ksh10,000</h6>
-                                                                   <button class="btn btn-primary">Add to cart</button>
-                                                               </div>
-                                    
-                                                                      <div class="col-md-3">
-                                                                            <img src="./images/liv6.jpg" width="310px" height="280px">
-                                                                              <h5>PIGS</h5>
-                                                                              <h6>ksh20,000</h6>
-                                                                              <button class="btn btn-primary">Add to cart</button>
-                                                                      </div>
-                                
-                                                                      <div class="col-md-3">
-                                                                            <img src="./images/liv9.jpeg" width="300px" height="280px">
-                                                                              <h5>RABBITS</h5>
-                                                                              <h6>ksh5000</h6>
-                                                                              <button class="btn btn-primary">Add to cart</button>
-                                                                      </div> 
-                                                                 </div>
-                                                                </div>
+                                       <div class="modal fade" id="mango" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                              <div class="modal-content text-center">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title" id="mango">MANGOES</h5>
+                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                  </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                        <img src="../images/fruit2.jpeg" width="310px" height="280px">
+                                                        <p>Mangoes are grown in large farm.<br>
+                                                            Cost:ksh 55 per Kg.
+                                                        </p>
+                                                    </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                </div>
+                                              </div>
+                                            </div>
+                                           </div>
+
+                                           <div class="modal fade" id="strawberries" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                  <div class="modal-content text-center">
+                                                    <div class="modal-header">
+                                                      <h5 class="modal-title" id="strawberries">STRAWBERRIES</h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                            <img src="../images/fruit4.jpeg" width="310px" height="280px">
+                                                            <p>Strawberries are grown in large farm.<br>
+                                                                Cost:ksh 102 per Kg.
+                                                            </p>
+                                                        </div>
+                                                    <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                      
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                               </div>
+
+                              <div class="modal fade" id="pineapple" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                      <div class="modal-content text-center">
+                                                        <div class="modal-header">
+                                                          <h5 class="modal-title" id="pineapple">PINEAPPLES</h5>
+                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                          </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                                <img src="../images/fruit5.jpg" width="310px" height="280px">
+                                                                <p>Pineapple are grown in large farm.<br>
+                                                                    Cost:ksh 89 @each.
+                                                                </p>
                                                             </div>
-                        
-            
+                                                        <div class="modal-footer">
+                                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                          
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                   </div>
+
+                              <div class="modal fade" id="bananas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog" role="document">
+                                                          <div class="modal-content text-center">
+                                                            <div class="modal-header">
+                                                              <h5 class="modal-title" id="bananas">BANANAS</h5>
+                                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                              </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                    <img src="../images/fruit6.jpeg" width="310px" height="280px">
+                                                                    <p>Banana are grown in large farm.<br>
+                                                                        Cost:ksh 89 per kg.
+                                                                    </p>
+                                                                </div>
+                                                            <div class="modal-footer">
+                                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                              
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                       </div>
+
+                                    <div class="modal fade" id="melon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog" role="document">
+                                                              <div class="modal-content text-center">
+                                                                <div class="modal-header">
+                                                                  <h5 class="modal-title" id="melon">WATERMELON</h5>
+                                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                  </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                        <img src="../images/fruit7.jpeg" width="310px" height="280px">
+                                                                        <p>Watermelon are grown in large farm.<br>
+                                                                            Cost:ksh 224 @ each.
+                                                                        </p>
+                                                                    </div>
+                                                                <div class="modal-footer">
+                                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                  
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                           </div>
+
+                                                           <div class="modal fade" id="papaya" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog" role="document">
+                                                                  <div class="modal-content text-center">
+                                                                    <div class="modal-header">
+                                                                      <h5 class="modal-title" id="papaya">PAPAYA</h5>
+                                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                      </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                            <img src="../images/fruit8.jpeg" width="310px" height="280px">
+                                                                            <p>Papaya are grown in large farm.<br>
+                                                                                Cost:ksh 58 per Kg.
+                                                                            </p>
+                                                                        </div>
+                                                                    <div class="modal-footer">
+                                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                      
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                               </div>
+
+                          <div class="modal fade" id="bull" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                    <div class="modal-dialog" role="document">
+                                                                      <div class="modal-content text-center">
+                                                                        <div class="modal-header">
+                                                                          <h5 class="modal-title" id="bull">BULL</h5>
+                                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                          </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                                <img src="../images/liv1.jpg" width="310px" height="280px">
+                                                                                <p>The bull cost ksh 45,000.
+                                                                                </p>
+                                                                            </div>
+                                                                        <div class="modal-footer">
+                                                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                          
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                   </div>
+
+                              <div class="modal fade" id="chicken" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                        <div class="modal-dialog" role="document">
+                                                                          <div class="modal-content text-center">
+                                                                            <div class="modal-header">
+                                                                              <h5 class="modal-title" id="chicken">BULL</h5>
+                                                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                              </button>
+                                                                            </div>
+                                                                            <div class="modal-body">
+                                                                                    <img src="../images/liv2.jpeg" width="310px" height="280px">
+                                                                                    <p>The chicken cost ksh 900.
+                                                                                    </p>
+                                                                                </div>
+                                                                            <div class="modal-footer">
+                                                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                              
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                       </div>
+
+                                                                       <div class="modal fade" id="cows" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                            <div class="modal-dialog" role="document">
+                                                                              <div class="modal-content text-center">
+                                                                                <div class="modal-header">
+                                                                                  <h5 class="modal-title" id="cows">CHICKEN</h5>
+                                                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                    <span aria-hidden="true">&times;</span>
+                                                                                  </button>
+                                                                                </div>
+                                                                                <div class="modal-body">
+                                                                                        <img src="../images/liv7.jpeg" width="310px" height="280px">
+                                                                                        <p>The freshian Cow cost ksh 55,000.
+                                                                                        </p>
+                                                                                    </div>
+                                                                                <div class="modal-footer">
+                                                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                  
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                           </div>
+
+                                                                           <div class="modal fade" id="sheep" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                                <div class="modal-dialog" role="document">
+                                                                                  <div class="modal-content text-center">
+                                                                                    <div class="modal-header">
+                                                                                      <h5 class="modal-title" id="sheep">SHEEP</h5>
+                                                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                        <span aria-hidden="true">&times;</span>
+                                                                                      </button>
+                                                                                    </div>
+                                                                                    <div class="modal-body">
+                                                                                            <img src="../images/liv4.jpeg" width="310px" height="280px">
+                                                                                            <p>The sheep cost ksh 5,000.
+                                                                                            </p>
+                                                                                        </div>
+                                                                                    <div class="modal-footer">
+                                                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                      
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                               </div>
+
+                      <div class="modal fade" id="horses" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                                    <div class="modal-dialog" role="document">
+                                                                                      <div class="modal-content text-center">
+                                                                                        <div class="modal-header">
+                                                                                          <h5 class="modal-title" id="horses">HORSES</h5>
+                                                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                            <span aria-hidden="true">&times;</span>
+                                                                                          </button>
+                                                                                        </div>
+                                                                                        <div class="modal-body">
+                                                                                                <img src="../images/liv6.jpeg" width="310px" height="280px">
+                                                                                                <p>The horses cost ksh 65,000.
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        <div class="modal-footer">
+                                                                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                          
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                   </div>
+
+                                                                                   <div class="modal fade" id="goat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                                        <div class="modal-dialog" role="document">
+                                                                                          <div class="modal-content text-center">
+                                                                                            <div class="modal-header">
+                                                                                              <h5 class="modal-title" id="goat">GOAT</h5>
+                                                                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                                <span aria-hidden="true">&times;</span>
+                                                                                              </button>
+                                                                                            </div>
+                                                                                            <div class="modal-body">
+                                                                                                    <img src="../images/liv8.jpeg" width="310px" height="280px">
+                                                                                                    <p>The Goat cost ksh 5,000.
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            <div class="modal-footer">
+                                                                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                              
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                       </div>
 
 
-     </body>
+                                                                                   <div class="modal fade" id="pigs" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                                        <div class="modal-dialog" role="document">
+                                                                                          <div class="modal-content text-center">
+                                                                                            <div class="modal-header">
+                                                                                              <h5 class="modal-title" id="pigs">PIGS</h5>
+                                                                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                                <span aria-hidden="true">&times;</span>
+                                                                                              </button>
+                                                                                            </div>
+                                                                                            <div class="modal-body">
+                                                                                                    <img src="../images/liv6.jpg" width="310px" height="280px">
+                                                                                                    <p>The pig cost ksh 10,000 @ each.
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            <div class="modal-footer">
+                                                                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                              
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                       </div>
+
+                                                                                       <div class="modal fade" id="rabbit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                                            <div class="modal-dialog" role="document">
+                                                                                              <div class="modal-content text-center">
+                                                                                                <div class="modal-header">
+                                                                                                  <h5 class="modal-title" id="rabbit">RABBITS</h5>
+                                                                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                                    <span aria-hidden="true">&times;</span>
+                                                                                                  </button>
+                                                                                                </div>
+                                                                                                <div class="modal-body">
+                                                                                                        <img src="../images/liv9.jpeg" width="310px" height="280px">
+                                                                                                        <p>The Rabbit cost ksh 2,500 @ each.
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                <div class="modal-footer">
+                                                                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                                  
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                           </div>
+
+                                                                                           <div class="modal fade" id="sulphate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                                                <div class="modal-dialog" role="document">
+                                                                                                  <div class="modal-content">
+                                                                                                    <div class="modal-header">
+                                                                                                      <h5 class="modal-title" id="sulphate">SULPHATE</h5>
+                                                                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                                        <span aria-hidden="true">&times;</span>
+                                                                                                      </button>
+                                                                                                    </div>
+                                                                                                    <div class="modal-body">
+                                                                                                            <img src="../images/f1.jpeg" width="310px" height="280px">
+                                                                                                            <p>The Sulphate does well in farm planting, <br> it cost Ksh 5000 per sack.
+                                                                                                            </p>
+                                                                                                        </div>
+                                                                                                    <div class="modal-footer">
+                                                                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                                      
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                               </div>
+
+                                                                                               <div class="modal fade" id="manure" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                                                    <div class="modal-dialog" role="document">
+                                                                                                      <div class="modal-content">
+                                                                                                        <div class="modal-header">
+                                                                                                          <h5 class="modal-title" id="manure">SULPHATE</h5>
+                                                                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                                            <span aria-hidden="true">&times;</span>
+                                                                                                          </button>
+                                                                                                        </div>
+                                                                                                        <div class="modal-body">
+                                                                                                                <img src="../images/f8.jpeg" width="310px" height="280px">
+                                                                                                                <p>The Manure does well in farm planting, <br> it cost Ksh 5000 per sack.
+                                                                                                                </p>
+                                                                                                            </div>
+                                                                                                        <div class="modal-footer">
+                                                                                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                                          
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                   </div>
+
+                                                                                                   <div class="modal fade" id="bioax" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                                                        <div class="modal-dialog" role="document">
+                                                                                                          <div class="modal-content">
+                                                                                                            <div class="modal-header">
+                                                                                                              <h5 class="modal-title" id="bioax">BIOXA</h5>
+                                                                                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                                                <span aria-hidden="true">&times;</span>
+                                                                                                              </button>
+                                                                                                            </div>
+                                                                                                            <div class="modal-body">
+                                                                                                                    <img src="../images/f11.jpeg" width="310px" height="280px">
+                                                                                                                    <p>The Bioxa does well in farm planting, <br> it cost Ksh 3500 per sack.
+                                                                                                                    </p>
+                                                                                                                </div>
+                                                                                                            <div class="modal-footer">
+                                                                                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                                              
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                       </div>
+
+                                                                                                       <div class="modal fade" id="ammonium" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                                                            <div class="modal-dialog" role="document">
+                                                                                                              <div class="modal-content text-center">                                                                                                          <div class="modal-header">
+                                                                                                                  <h5 class="modal-title" id="ammonium">AMMONIUM</h5>
+                                                                                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                                                    <span aria-hidden="true">&times;</span>
+                                                                                                                  </button>
+                                                                                                                </div>
+                                                                                                                <div class="modal-body">
+                                                                                                                        <img src="../images/f10.jpeg" width="310px" height="280px">
+                                                                                                                        <p>The Ammonium does well in farm planting, <br> it cost Ksh 4200 per sack.
+                                                                                                                        </p>
+                                                                                                                    </div>
+                                                                                                                <div class="modal-footer">
+                                                                                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                                                  
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                           </div>
+
+                                                                                                           <div class="modal fade" id="tractor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                                                                <div class="modal-dialog" role="document">
+                                                                                                                  <div class="modal-content">
+                                                                                                                    <div class="modal-header">
+                                                                                                                      <h5 class="modal-title" id="tractor">TRACTOR</h5>
+                                                                                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                                                        <span aria-hidden="true">&times;</span>
+                                                                                                                      </button>
+                                                                                                                    </div>
+                                                                                                                    <div class="modal-body">
+                                                                                                                            <img src="../images/t1.jpeg" width="310px" height="280px">
+                                                                                                                            <p>The Plant Tractor does well in farm planting, <br> it cost Ksh 820,000.
+                                                                                                                            </p>
+                                                                                                                        </div>
+                                                                                                                    <div class="modal-footer">
+                                                                                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                                                      
+                                                                                                                    </div>
+                                                                                                                  </div>
+                                                                                                                </div>
+                                                                                                               </div>
+
+                                                                                                               <div class="modal fade" id="harvest" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                                                                    <div class="modal-dialog" role="document">
+                                                                                                                      <div class="modal-content">
+                                                                                                                        <div class="modal-header">
+                                                                                                                          <h5 class="modal-title" id="harvest">HARVEST TRACTOR</h5>
+                                                                                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                                                            <span aria-hidden="true">&times;</span>
+                                                                                                                          </button>
+                                                                                                                        </div>
+                                                                                                                        <div class="modal-body">
+                                                                                                                                <img src="../images/t2.jpeg" width="310px" height="280px">
+                                                                                                                                <p>The Harvest Tractor does well in farm planting, <br> it cost Ksh 420000 .
+                                                                                                                                </p>
+                                                                                                                            </div>
+                                                                                                                        <div class="modal-footer">
+                                                                                                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                                                          
+                                                                                                                        </div>
+                                                                                                                      </div>
+                                                                                                                    </div>
+                                                                                                                   </div>
+
+                                                                                                                   <div class="modal fade" id="plough" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                                                                        <div class="modal-dialog" role="document">
+                                                                                                                          <div class="modal-content text-center">
+                                                                                                                            <div class="modal-header">
+                                                                                                                              <h5 class="modal-title" id="plough">PLOUGH</h5>
+                                                                                                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                                                                <span aria-hidden="true">&times;</span>
+                                                                                                                              </button>
+                                                                                                                            </div>
+                                                                                                                            <div class="modal-body">
+                                                                                                                                    <img src="../images/plough.jpeg" width="310px" height="280px">
+                                                                                                                                    <p>The Plough does well in farm planting, <br> it cost Ksh 200000 .
+                                                                                                                                    </p>
+                                                                                                                                </div>
+                                                                                                                            <div class="modal-footer">
+                                                                                                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                                                              
+                                                                                                                            </div>
+                                                                                                                          </div>
+                                                                                                                        </div>
+                                                                                                                       </div>
+                                                                                                                       
+                                                                                                                       <div class="modal fade" id="sprinkler" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                                                                            
+                                                                                                                        
+                                                                                                                        
+
+       
+
+ <div id="piechart">
+        <div class="hold">
+                <div class="slice slice1">
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+t
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'sales per year'],
+  ['Vegetables', 8],
+  ['Fruits', 2],
+  ['Livestock', 4],
+  ['Fertilizers', 2],
+  ['Fruits', 8]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Average Sales', 'width':1000, 'height':600};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+</div>
+</div>
+</div>
+
+<footer>
+    <div class="container text-center bg-green">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="https://www.facebook.com" class="fa fa-facebook"> Facebook</a>
+                <a href="https://www.twitter.com" class="fa fa-twitter"> Twitter</a>
+                <a href="https://www.instagram.com" class="fa fa-instagram"> Instagram</a>
+                <a href="https://www.google.com" class="fa fa-google"> Google</a>
+                <a href="https://www.youtube.com" class="fa fa-youtube"> Youtube</a>
+                <a href="https://www.whatsup.com" class="fa fa-whatsup"> WhatsApp</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./js/myJs.js"></script>
+
+    </body>
 </html>

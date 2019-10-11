@@ -8,8 +8,9 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./css/style.css">
-    
+        <link rel="stylesheet" href="./css/styles1.css">
+        <script src="./js/jquery-3.4.1.js"></script>
+        <script src="./js/scripts1.js"></script>    
     </head>
     
     <body>
@@ -146,33 +147,58 @@
     
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="about.html">About Us <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Market <span class="sr-only">(current)</a>
+                        <a class="nav-link" href="market.html">Market <span class="sr-only">(current)</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services <span class="sr-only">(current)</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Contact Us <span class="sr-only">(current)</a>
                     </li>
                      </ul>
             </div>
     
-            <a href="" class="btn btn-default btn-rounded my-3" data-toggle="modal" data-target="#modalLRForm">LogIn | Register</a>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <!--  -->
             </div>
         </nav>
     
         <!-- End of navbar -->
         
        <!--  Start of Contact -->
-    
-    
+       <div class="contact">
+           <h1>Contact Us</h1>
+           <form>
+               <p> You can reach us through:</p>
+               <div class="message">
+               <label>Enter Name</label> <br>
+               <input type="text" id="name" placeholder="Enter your Name" required><br>
+               <label>Enter Email</label><br>
+               <input type="text" id="email" placeholder="Enter your Email" required><br>
+               <label>Enter your message</label><br>
+               <input type="text" id="message" placeholder="Enter your Message" required><br>
+               <button class="submit btn-primary" id="submit">submit</button>
+            </div>
+        
+      
+               <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<div class="cont">
+<a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+<a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+<a href="https://www.google.com"  target="_blank"class="fa fa-google"></a>
+<a href="https://www.youtube.com" target="_blank" class="fa fa-youtube"></a>
+<a href="https://www.whatsup.com" target="_blank" class="fa fa-whatsup"></a>
+</div>
+</div>
+</form>
+
+<script src="js/scripts1.js"></script>
+       
 </body>
 </html>
